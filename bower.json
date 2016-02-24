@@ -1,0 +1,22 @@
+{
+  "name": "pms",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "prakash <thotasuryaprakash246@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.0"
+  }
+}

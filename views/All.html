@@ -1,0 +1,57 @@
+<div>
+
+		<div>
+			<table class = "table table-striped">
+				<thead ng-repeat = "users in userdata.users | limitTo:1">
+					<th ng-repeat = "(key,value) in users">{{key}}</th>
+				</thead>
+				<tbody ng-repeat = "users in userdata.users">
+						<td ng-repeat = "(key,value) in users">{{value}}</td>
+				</tbody>
+				
+			</table>
+		</div>
+
+
+
+
+	<table class = "table table-striped">
+		<thead>
+			<tr ng-repeat="project in projectdata.projects | limitTo:1">
+				<th class="text-center" ng-repeat="(key, value) in project">{{ key | uppercase }}
+				</th>
+			<tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="project in projectdata.projects">
+				<td>{{ project.id }}</td>
+				<td>{{ project.name }}</td>
+				<td class="text-center">
+					<div ng-repeat="users in project.proejctMembers.userId">
+						<span>{{ users }}</span>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+
+
+
+	<table class = "table table-striped">
+		<thead ng-repeat = "tasks in taskdata.tasks | limitTo:1" | uppercase>
+		<th class ="text-center" ng-repeat = "(key , value) in tasks">{{key|uppercase}}</th>
+		
+		</thead>
+		<tbody>
+			<tr class = "text-center" ng-repeat="info in taskdata.tasks">
+				<td>{{ info.userId }}</td>
+				<td>{{ info.taskId }}</td>
+				<td>{{ info.description }}</td>
+			</tr>
+		</tbody>		
+	</table>	
+
+</html>

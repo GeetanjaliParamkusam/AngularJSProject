@@ -1,0 +1,13 @@
+	
+
+		<div>
+			<table class = "table table-striped">
+				<thead ng-repeat = "users in userobj.users | limitTo:1">
+					<th ng-repeat = "(key,value) in users">{{key}}</th>
+				</thead>
+				<tbody ng-repeat = "users in userobj.users">
+						<td ng-repeat = "(key,value) in users">{{value}}</td>
+				</tbody>
+				
+			</table>
+		</div>

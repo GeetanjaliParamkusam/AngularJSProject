@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>Project Management</title>
+		
+		<script src = "bower_components/jquery/dist/jquery.min.js"></script>
+		<link href = "bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href = "bower_components/bootstrap/dist/js/bootstrap.min.js" rel="stylesheet">
+		<script src = "bower_components/angular/angular.js"></script>
+		<script src = "bower_components/angular-route/angular-route.min.js"></script>
+		<script src = "js/modules/app.js"></script>
+		<script src = "js/controllers/controller.js"></script>
+		<script src = "js/models/services.js"></script>
+	</head>
+   
+	<body>
+			
+		<div ng-app = "projectApp">
+			
+			<span class = "btn btn-default"> <a ng-href="#/All">FetchAll</a> </span>
+			<span class = "btn btn-default"> <a ng-href="#/users">Users</a> </span>
+			<span class = "btn btn-default"> <a ng-href="#/projects">Projects</a> </span>
+			<span class = "btn btn-default"> <a ng-href="#/tasks">Tasks</a> </span>
+
+		<div ng-view></div>
+			
+			
+		
+			
+				
+		</div>	
+	</body>
+</html>
+      

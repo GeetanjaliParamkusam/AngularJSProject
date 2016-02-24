@@ -1,0 +1,25 @@
+{
+	"projects": [
+		{
+		"id": 1,
+		"name": "Project1",
+		"projectMembers": {
+				"userId": [1, 2, 3]
+			}
+		},
+		{
+		"id": 2,
+		"name": "Project2",
+		"projectMembers": {
+				"userId": [4, 5, 6]
+			}
+		},
+		{
+		"id": 3,
+		"name": "Project3",
+		"projectMembers": {
+				"userId": [2, 4, 6, 1, 3]
+			}
+		}
+	]
+}
