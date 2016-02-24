@@ -18,5 +18,23 @@
 	</tbody>
 </table>
 
-{{paramobj}}
-
+<!--{{paramobj}}-->
+<table class = "table table-striped">
+	<thead>
+		<tr ng-repeat="project in paramobj| limitTo:1">
+			<th class="text-center" ng-repeat="(key, value) in project">{{ key | uppercase }}
+			</th>
+		<tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="project in paramobj">
+			<td class="text-center">{{ project.id }}</td>
+			<td class="text-center">{{ project.name }}</td>
+			<td class="text-center">
+				<div ng-repeat="users in project.projectMembers.userId">
+					<span><a ng-href="#/users/{{users}}/projects">{{ users }}</a></span>
+				</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
