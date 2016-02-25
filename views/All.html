@@ -22,19 +22,20 @@
 				</th>
 			<tr>
 		</thead>
-		<tbody>
+		<tbody class="text-center">
 			<tr ng-repeat="project in projectdata.projects">
 				<td>{{ project.id }}</td>
 				<td>{{ project.name }}</td>
 				<td class="text-center">
-					<div ng-repeat="users in project.proejctMembers.userId">
-						<span>{{ users }}</span>
+					<div ng-repeat="users in project.projectMembers.userId">
+						<span><a ng-href="#/users/{{users}}/projects">{{ users }}
+								</a>
+						</span>
 					</div>
 				</td>
 			</tr>
 		</tbody>
 	</table>
-
 
 
 
